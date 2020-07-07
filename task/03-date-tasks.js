@@ -89,10 +89,10 @@ function timeSpanToString(startDate, endDate) {
    let minutes = Math.trunc((span - hours*3600000) / 60000);
    let seconds = Math.trunc((span - hours*3600000 - minutes*60000) / 1000);
    let milliseconds = span - hours*3600000 - minutes*60000 - seconds*1000;
-   hours = String(hours).padStart(2, '0');
-   minutes = String(minutes).padStart(2, '0');
-   seconds = String(seconds).padStart(2, '0');
-   milliseconds = String(milliseconds).padStart(3, '0');
+   hours = hours.toString().padStart(2, '0');
+   minutes = minutes.toString().padStart(2, '0');
+   seconds = seconds.toString().padStart(2, '0');
+   milliseconds = milliseconds.toString().padStart(3, '0');
    return `${hours}:${minutes}:${seconds}.${milliseconds}`;
 }
 
