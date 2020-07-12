@@ -473,26 +473,6 @@ function sortCitiesArray(arr) {
             return 0;
       }
    )
-   /* arr.sort(
-      function(a, b){
-         if (a.city > b.city)
-            return 1;
-         if (a.city < b.city)
-            return -1;
-         else
-            return 0;
-      }
-   );
-   arr.sort(
-      function(a, b){
-         if (a.country > b.country)
-            return 1;
-         if (a.country < b.country)
-            return -1;
-         else
-            return 0;
-      }
-   ); */
    return arr;
 }
 
